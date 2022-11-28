@@ -11,7 +11,7 @@
 
 function factorialisOfNumber(num) {
 if (
-  (typeof num !== "number" && typeof num !== "bigint" ||  num === null || num === "" || num === " " )
+  (typeof num !== "number" && typeof num !== "bigint" ||  num === null || num === "" || num === " " ||isNaN(Number(num))===false )
 ) { throw new TypeError();
 }
 if(num < 0){
@@ -23,9 +23,8 @@ if (num === 0) {
 return num * factorialisOfNumber(num -1);
 }
 
-
 try {
-  console.log(factorialisOfNumber());
+  console.log(factorialisOfNumber('m'));
 } catch (error) {
   if(error instanceof TypeError ){
     console.log('Wrong type');
