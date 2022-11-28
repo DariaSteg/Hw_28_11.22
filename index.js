@@ -10,8 +10,8 @@
 
 
 function factorialisOfNumber(num) {
-if (
-  (typeof num !== "number" && typeof num !== "bigint" ||  num === null || num === "" || num === " " ||isNaN(Number(num))===false )
+if (===false 
+  (typeof num !== "number" && typeof num !== "bigint" ||  num === null || num === "" || num === " "||isNaN(Number(num)))
 ) { throw new TypeError();
 }
 if(num < 0){
